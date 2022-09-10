@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sagar-aryal/redux-store/static/css/main.27cd625d.css",
+    "main.js": "/sagar-aryal/redux-store/static/js/main.22238aae.js",
+    "index.html": "/sagar-aryal/redux-store/index.html",
+    "main.27cd625d.css.map": "/sagar-aryal/redux-store/static/css/main.27cd625d.css.map",
+    "main.22238aae.js.map": "/sagar-aryal/redux-store/static/js/main.22238aae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27cd625d.css",
+    "static/js/main.22238aae.js"
+  ]
+}
