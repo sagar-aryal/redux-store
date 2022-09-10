@@ -6,6 +6,7 @@ import { store } from "./redux/store";
 import NavBar from "./components/NavBar";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <Footer />
         </Router>
       </Provider>
     </div>

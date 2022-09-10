@@ -111,6 +111,7 @@ main h3 {
 
 .cartWrapper {
   max-width: 800px;
+  min-height: 80vh;
   margin: 20px auto;
 }
 
@@ -142,7 +143,9 @@ main h3 {
   height: 60px;
 }
 
-.total {
-  text-align: right;
-  margin-right: 15px;
+footer {
+  background-color: rgb(113, 42, 180);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }

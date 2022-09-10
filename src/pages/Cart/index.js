@@ -5,6 +5,7 @@ import {
   decrementQuantity,
   incrementQuantity,
   remove,
+  clear,
 } from "../../redux/features/cartSlice";
 
 const Cart = () => {
@@ -44,7 +45,12 @@ const Cart = () => {
         ))}
       </div>
       {cartItems.length >= 1 ? (
-        <h3 className="total">Total: ${total}</h3>
+        <>
+          <h3 className="total">Total: ${parseFloat(total).toFixed(2)}</h3>
+          <button className="btn" onClick={() => dispatch(clear())}>
+            clear all
+          </button>
+        </>
       ) : (
         <h3>Cart is empty</h3>
       )}
