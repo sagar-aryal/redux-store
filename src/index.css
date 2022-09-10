@@ -1,1 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* HEADING SECTION */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(113, 42, 180);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  min-height: 80px;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.right {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* MAIN SECTION */
+
+main h2 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 24px 0;
+}
+
+main h3 {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 40px 20px;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card img {
+  height: 80px;
+}
+
+.card h4 {
+  margin: 10px 0;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: rgb(113, 42, 180);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3 ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(113, 42, 180, 0.8);
+}
