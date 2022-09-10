@@ -23,6 +23,7 @@ a {
 header {
   position: sticky;
   top: 0;
+  right: 0;
   background-color: rgb(113, 42, 180);
   color: white;
   display: flex;
@@ -106,4 +107,24 @@ main h3 {
 
 .btn:hover {
   background-color: rgba(113, 42, 180, 0.8);
+}
+
+.cartWrapper {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.cartCard {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 5px;
+  column-gap: 10px;
+}
+
+.cartCard img {
+  height: 40px;
 }

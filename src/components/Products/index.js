@@ -1,28 +1,23 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
 import ProductItems from "../ProductItems";
+import { fetchProducts } from "../../redux/features/productSlice";
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
+  const { data, loading, error } = useSelector((state) => state.product);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get("https://fakestoreapi.com/products");
-        const data = await response.data;
-        setProducts(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchProducts();
-  }, []);
+    dispatch(fetchProducts());
+  }, [dispatch]);
 
   return (
     <div className="productsWrapper">
-      {products.map((product) => (
-        <ProductItems key={product.id} {...product} />
-      ))}
+      {loading && <i>Loading...</i>}
+      {!error &&
+        data &&
+        data.map((product) => <ProductItems key={product.id} {...product} />)}
     </div>
   );
 };
