@@ -1,3 +1,3 @@
 # Redux-Store
 
-## Live Demo []
+## [View Demo](https://sagar-aryal.github.io/redux-store/)

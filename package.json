@@ -1,7 +1,7 @@
 {
   "name": "redux-shop",
   "version": "0.1.0",
-  "homepage": "https://github.com/sagar-aryal/redux-store",
+  "homepage": "https://sagar-aryal.github.io/redux-store",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
