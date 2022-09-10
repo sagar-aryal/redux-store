@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div>
       <Provider store={store}>
-        <Router>
+        <Router basename="/redux-store">
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
