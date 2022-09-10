@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div>
       <Provider store={store}>
-        <Router basename="/reactjs-website">
+        <Router>
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
