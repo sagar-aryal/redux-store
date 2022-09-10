@@ -1,9 +1,16 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { total } from "../../redux/features/cartSlice";
 
 const NavBar = () => {
-  const items = useSelector((state) => state.cart);
+  const { cartItems, quantity } = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(total());
+  }, [dispatch, cartItems]);
+
   return (
     <header>
       <div className="left">
@@ -21,7 +28,9 @@ const NavBar = () => {
           </ul>
         </nav>
       </div>
-      <div className="right">cart-items: {items.length}</div>
+      <div className="right">
+        <Link to="/cart">cart-items: {quantity}</Link>
+      </div>
     </header>
   );
 };

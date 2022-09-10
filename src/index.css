@@ -117,7 +117,7 @@ main h3 {
 .cartCard {
   background-color: #fff;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
   margin-bottom: 18px;
   padding: 12px;
@@ -125,6 +125,24 @@ main h3 {
   column-gap: 10px;
 }
 
+.amount {
+  text-align: center;
+}
+
+.amount span {
+  margin: 0 15px;
+}
+
+.cart-btn {
+  padding: 2px 5px;
+  width: 40px;
+}
+
 .cartCard img {
-  height: 40px;
+  height: 60px;
+}
+
+.total {
+  text-align: right;
+  margin-right: 15px;
 }
